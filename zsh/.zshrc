@@ -114,6 +114,9 @@ alias vim="nvim"
 alias ll="ls -al"
 alias lg="lazygit"
 alias zshconf="vim ~/.config/zsh/.zshrc"
+alias wg-on="sudo systemctl start wg-quick@wg0"
+alias wg-off="sudo systemctl stop wg-quick@wg0"
+alias wg-stats="sudo wg show"
 
 # fnm
 export PATH="/home/likendev/.local/share/fnm:$PATH"
