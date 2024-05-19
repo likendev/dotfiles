@@ -1,0 +1,36 @@
+" Set leader
+nnoremap <SPACE> <Nop>
+let mapleader="\<Space>"
+
+" Tab Settings
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" General settings
+set number
+set scrolloff=8
+set colorcolumn=80
+
+set hlsearch=false
+set incsearch
+set ignorecase
+set smartcase
+
+set breakindent
+set undofile
+
+set clipboard+=unnamedplus " Use OS clipboard
+set signcolumn=yes
+set termguicolors
+set mouse=a
+
+" Remap
+xnoremap p "_dP
+
+xnoremap <leader>d "_d
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
