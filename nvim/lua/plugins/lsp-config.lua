@@ -82,6 +82,17 @@ return {
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
             vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { desc = "Signature Documentation" })
+
+            -- Toggle lsp diagnostic
+            local diagnostics_active = true
+            vim.keymap.set('n', '<leader>d', function()
+                diagnostics_active = not diagnostics_active
+                if diagnostics_active then
+                    vim.diagnostic.show()
+                else
+                    vim.diagnostic.hide()
+                end
+            end)
         end,
     },
 }
