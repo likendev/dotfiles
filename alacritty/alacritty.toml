@@ -20,4 +20,4 @@ family = "JetbrainsMono Nerd Font"
 style = "Regular"
 
 [shell]
-program = "~/.local/bin/tmux_chooser.sh"
+program = "/home/likendev/.local/bin/tmux_chooser.sh"
