@@ -10,7 +10,7 @@ return {
                     end,
                 }),
                 null_ls.builtins.diagnostics.eslint_d,
-                null_ls.builtins.formatting.prettier,
+                null_ls.builtins.formatting.prettierd,
             },
         })
         vim.keymap.set("n", "<space>f", function()
