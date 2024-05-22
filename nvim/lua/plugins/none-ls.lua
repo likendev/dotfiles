@@ -10,7 +10,9 @@ return {
                     end,
                 }),
                 null_ls.builtins.diagnostics.eslint_d,
-                null_ls.builtins.formatting.prettierd,
+                null_ls.builtins.formatting.prettierd.with {
+                    filetypes = { "html", "json", "svelte", "markdown", "css", "javascript", "javascriptreact" }
+                },
             },
         })
         vim.keymap.set("n", "<space>f", function()

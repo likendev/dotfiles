@@ -60,6 +60,9 @@ return {
                 capabilities = capabilities,
                 root_dir = lspconfig.util.root_pattern("package.json"),
                 single_file_support = false,
+                on_attach = function(client)
+                    client.resolved_capabilities.document_formatting = false
+                end,
             })
             lspconfig.denols.setup({
                 capabilities = capabilities,
