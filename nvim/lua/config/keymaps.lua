@@ -41,5 +41,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 
 -- Neotree
-vim.keymap.set('n', '<leader>fr', ':Neotree reveal<CR>', {})
+vim.keymap.set("n", "<leader>fr", ":Neotree reveal<CR>", {})
 
+vim.keymap.set("n", "<C-q>", "<C-a>")
+vim.keymap.set("v", "<C-q>", "<C-a>")
