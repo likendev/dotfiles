@@ -113,6 +113,7 @@ alias vim="nvim"
 alias ll="ls -al"
 alias lg="lazygit"
 alias zshconf="vim ~/.config/zsh/.zshrc"
+alias source-zsh="source ~/.config/zsh/.zshrc"
 
 # fnm
 export PATH="/home/likendev/.local/share/fnm:$PATH"
@@ -132,11 +133,21 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
 # deno
-export DENO_INSTALL="$HOME/.deno"
+export DENO_INSTALL="$XDG_CACHE_HOME/deno/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+# go
+export GOPATH="/usr/local/go"
+export PATH=$PATH:$GOPATH
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+export PATH=$PATH:$XDG_DATA_HOME/go/bin
+
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # bun completions
 [ -s "/home/likendev/.bun/_bun" ] && source "/home/likendev/.bun/_bun"
+
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
