@@ -137,11 +137,9 @@ export DENO_INSTALL="$XDG_CACHE_HOME/deno/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 # go
-export GOPATH="/usr/local/go"
-export PATH=$PATH:$GOPATH
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
-export PATH=$PATH:$XDG_DATA_HOME/go/bin
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
 # asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
@@ -153,3 +151,8 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 [ -s "/home/likendev/.bun/_bun" ] && source "/home/likendev/.bun/_bun"
 
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
+# ZVM
+export ZVM_INSTALL="$HOME/.zvm/self"
+export PATH="$PATH:$HOME/.zvm/bin"
+export PATH="$PATH:$ZVM_INSTALL/"
