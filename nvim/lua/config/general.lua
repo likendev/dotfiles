@@ -41,3 +41,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group = highlight_group,
     pattern = "*",
 })
+vim.lsp.config('expert', {
+  cmd = { 'expert' },
+  root_markers = { 'mix.exs', '.git' },
+  filetypes = { 'elixir', 'eelixir', 'heex' },
+})
+
+vim.lsp.enable 'expert'

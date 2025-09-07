@@ -11,7 +11,7 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "elixirls",
+                    "emmet_language_server",
                     "rust_analyzer",
                     "ts_ls",
                     "tailwindcss",
@@ -49,9 +49,16 @@ return {
                 },
                 capabilities = capabilities,
             })
-            lspconfig.elixirls.setup({
-                capabilities = capabilities,
-                cmd = { "/home/likendev/.config/elixir_ls/language_server.sh" },
+            lspconfig.emmet_language_server.setup({
+                filetypes = {
+                    "html",
+                    "css",
+                    "scss",
+                    "javascript",
+                    "typescript",
+                    "elixir",
+                    "heex",
+                },
             })
             lspconfig.rust_analyzer.setup({
                 capabilities = capabilities,

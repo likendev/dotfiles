@@ -5,6 +5,12 @@ return {
         local configs = require("nvim-treesitter.configs")
 
         configs.setup({
+            ensure_installed = {
+                "eex",
+                "elixir",
+                "erlang",
+                "heex",
+            },
             auto_install = true,
             sync_install = false,
             highlight = { enable = true },
