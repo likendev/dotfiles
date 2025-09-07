@@ -5,6 +5,8 @@ return {
         local configs = require("nvim-treesitter.configs")
 
         configs.setup({
+            modules = {},
+            ignore_install = {},
             ensure_installed = {
                 "eex",
                 "elixir",
