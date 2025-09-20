@@ -46,6 +46,10 @@ font-family = JetBrains Mono
 theme = catppuccin-mocha
 mouse-hide-while-typing = true
 scrollback-limit = 1000000
+cursor-style = block
+shell-integration-features = no-cursor
+cursor-style-blink = false
+cursor-text = #11111b
 
 keybind = ctrl+a>h=new_split:left
 keybind = ctrl+a>j=new_split:down
