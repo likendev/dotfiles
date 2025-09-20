@@ -41,10 +41,14 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group = highlight_group,
     pattern = "*",
 })
-vim.lsp.config('expert', {
-  cmd = { 'expert' },
-  root_markers = { 'mix.exs', '.git' },
-  filetypes = { 'elixir', 'eelixir', 'heex' },
-})
 
-vim.lsp.enable 'expert'
+vim.lsp.enable({
+    "lua_ls",
+    "expert",
+    "emmet_language_server",
+    "rust_analyzer",
+    "ts_ls",
+    "tailwindcss",
+    "svelte",
+    "zls"
+})
