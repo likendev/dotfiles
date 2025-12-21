@@ -11,6 +11,7 @@ vim.opt.shiftwidth = 4
 vim.wo.number = true
 vim.o.scrolloff = 8
 vim.o.colorcolumn = "80"
+vim.o.cmdheight= 0
 
 vim.o.hlsearch = false
 vim.o.incsearch = true
