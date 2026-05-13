@@ -1,1 +1,5 @@
 /tmux/plugins/*
+**/ohmyzsh
+**/.zsh_history
+**/.zcompdump*
+**/.DS_Store
