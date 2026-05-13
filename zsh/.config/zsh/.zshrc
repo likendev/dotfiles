@@ -156,3 +156,6 @@ compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
 export PATH="$PATH:$ZVM_INSTALL/"
+
+# GPG
+export GPG_TTY=$(tty)
