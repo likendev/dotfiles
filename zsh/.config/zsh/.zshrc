@@ -157,5 +157,12 @@ export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
 export PATH="$PATH:$ZVM_INSTALL/"
 
+# GNUPG
+export GNUPGHOME="$HOME/.config/gnupg"
+
 # GPG
 export GPG_TTY=$(tty)
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/liken/.lmstudio/bin"
+# End of LM Studio CLI section
