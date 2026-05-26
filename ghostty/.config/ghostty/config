@@ -51,22 +51,22 @@ shell-integration-features = no-cursor
 cursor-style-blink = false
 cursor-text = #11111b
 
-keybind = ctrl+a>h=new_split:left
-keybind = ctrl+a>j=new_split:down
-keybind = ctrl+a>k=new_split:up
-keybind = ctrl+a>l=new_split:right
-keybind = ctrl+a>z=toggle_split_zoom
+keybind = ctrl+q>h=new_split:left
+keybind = ctrl+q>j=new_split:down
+keybind = ctrl+q>k=new_split:up
+keybind = ctrl+q>l=new_split:right
+keybind = ctrl+q>z=toggle_split_zoom
 
-keybind = ctrl+a>ctrl+c=new_tab
-keybind = ctrl+a>c=close_surface
+keybind = ctrl+q>ctrl+c=new_tab
+keybind = ctrl+q>c=close_surface
 
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
 keybind = ctrl+l=goto_split:right
 
-keybind = ctrl+a>n=next_tab
-keybind = ctrl+a>p=previous_tab
+keybind = ctrl+q>n=next_tab
+keybind = ctrl+q>p=previous_tab
 
 keybind = super+r=reload_config
 
