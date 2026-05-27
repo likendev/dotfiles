@@ -109,6 +109,12 @@ export VISUAL='nvim'
 #
 # Example aliases
 alias ohmyzsh="vim ~/.oh-my-zsh"
+_clear_screen() {
+  zle clear-screen
+  tmux clear-history 2>/dev/null
+}
+zle -N _clear_screen
+bindkey '^L' _clear_screen
 alias vim="nvim"
 alias ll="ls -al"
 alias lg="lazygit"

@@ -69,6 +69,7 @@ keybind = ctrl+q>n=next_tab
 keybind = ctrl+q>p=previous_tab
 
 keybind = super+r=reload_config
+keybind = super+k=text:\x0c
 
 window-save-state = always
 
