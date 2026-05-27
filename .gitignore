@@ -1,4 +1,4 @@
-/tmux/plugins/*
+**/tmux/plugins/*
 **/ohmyzsh
 **/.zsh_history
 **/.zcompdump*
