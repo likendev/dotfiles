@@ -121,6 +121,12 @@ alias lg="lazygit"
 alias zshconf="vim ~/.config/zsh/.zshrc"
 alias source-zsh="source ~/.config/zsh/.zshrc"
 
+# XDG user binaries (~/.local/bin)
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
+
 # fnm
 export PATH="/home/likendev/.local/share/fnm:$PATH"
 eval "`fnm env`"
