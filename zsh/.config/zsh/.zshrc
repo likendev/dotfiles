@@ -178,3 +178,6 @@ export GPG_TTY=$(tty)
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/liken/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# Pi
+export PATH="/Users/liken/.local/share/fnm/node-versions/v24.15.0/installation/bin:$PATH"
