@@ -51,6 +51,10 @@ shell-integration-features = no-cursor
 cursor-style-blink = false
 cursor-text = #11111b
 
+font-feature = -liga
+font-feature = -calt
+font-feature = -dlig
+
 keybind = ctrl+q>h=new_split:left
 keybind = ctrl+q>j=new_split:down
 keybind = ctrl+q>k=new_split:up
