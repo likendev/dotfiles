@@ -24,7 +24,7 @@ return {
                     return "]c"
                 end
                 vim.schedule(function()
-                    gs.next_hunk()
+                    gs.nav_hunk("next")
                 end)
                 return "<Ignore>"
             end, { expr = true, desc = "Jump to next hunk" })
@@ -34,7 +34,7 @@ return {
                     return "[c"
                 end
                 vim.schedule(function()
-                    gs.prev_hunk()
+                    gs.nav_hunk("prev")
                 end)
                 return "<Ignore>"
             end, { expr = true, desc = "Jump to previous hunk" })
@@ -51,7 +51,6 @@ return {
             map("n", "<leader>hs", gs.stage_hunk, { desc = "git stage hunk" })
             map("n", "<leader>hr", gs.reset_hunk, { desc = "git reset hunk" })
             map("n", "<leader>hS", gs.stage_buffer, { desc = "git Stage buffer" })
-            map("n", "<leader>hu", gs.undo_stage_hunk, { desc = "undo stage hunk" })
             map("n", "<leader>hR", gs.reset_buffer, { desc = "git Reset buffer" })
             map("n", "<leader>hp", gs.preview_hunk, { desc = "preview git hunk" })
             map("n", "<leader>hb", function()
@@ -64,7 +63,7 @@ return {
 
             -- Toggles
             map("n", "<leader>tb", gs.toggle_current_line_blame, { desc = "toggle git blame line" })
-            map("n", "<leader>td", gs.toggle_deleted, { desc = "toggle git show deleted" })
+            map("n", "<leader>td", gs.preview_hunk_inline, { desc = "preview git hunk inline" })
 
             -- Text object
             map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", { desc = "select git hunk" })

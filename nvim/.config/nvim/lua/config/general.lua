@@ -1,6 +1,3 @@
--- Set leader
-vim.g.mapleader = " "
-
 -- Tab settings
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
@@ -33,11 +30,11 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = "menuone,noselect"
 
 -- [[ Highlight on yank ]]
--- See `:help vim.highlight.on_yank()`
+-- See `:help vim.hl.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
-        vim.highlight.on_yank()
+        vim.hl.on_yank()
     end,
     group = highlight_group,
     pattern = "*",
